@@ -25,9 +25,9 @@ $ catkin_init_workspace
 
 3. Within `catkin_ws/src`, clone the project
 ```
-$ git clone https://github.com/huuanhhuynguyen/RoboND-Where-Am-I.git
-$ cp -R RoboND-Where-Am-I/my_robot .
-$ rm -rf RoboND-Where-Am-I
+$ git clone https://github.com/huuanhhuynguyen/RoboND-Map-My-World.git
+$ cp -R RoboND-Map-My-World/my_robot .
+$ rm -rf RoboND-Map-My-World
 ```
 
 4. Also within `catkin_ws/src`, clone the `teleop` project
