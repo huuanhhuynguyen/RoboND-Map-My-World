@@ -4,10 +4,12 @@ An application of [rtabmap-ros](http://wiki.ros.org/rtabmap_ros) package for
 simultaneous localization and mapping (SLAM) of a mobile robot. 
 This project is part of Udacity Robotics Software Engineer Nanodegree.
 
+![image](/images/2.png)
+
 ## Description
 The project consists of the following parts:
 1. A Gazebo world and a mobile robot from this [project](https://github.com/huuanhhuynguyen/RoboND-Go-Chase-It).
-2. ROS packages: [rtabmap-ros](http://wiki.ros.org/rtabmap_ros)
+2. ROS package: [rtabmap-ros](http://wiki.ros.org/rtabmap_ros)
 
 ## Prequisites
 1. ROS (Melodic or Kinetic), Gazebo on Linux
