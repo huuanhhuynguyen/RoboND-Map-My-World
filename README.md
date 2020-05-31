@@ -29,7 +29,7 @@ This project is part of Udacity Robotics Software Engineer Nanodegree.
     <th><p>
            <img src="images/features.png"
             alt="features" width="200" height="200"></a>
-           <br>Occupancy Grid
+           <br>Detected features
       </p>
     </th>
   </tr>
@@ -58,6 +58,8 @@ $ catkin_init_workspace
 ```
 $ git clone https://github.com/huuanhhuynguyen/RoboND-Map-My-World.git
 $ cp -R RoboND-Map-My-World/my_robot .
+$ cp -R RoboND-Map-My-World/rtabmap.db .
+$ cp -R RoboND-Map-My-World/default.rviz .
 $ rm -rf RoboND-Map-My-World
 ```
 
@@ -105,3 +107,7 @@ the resulted map with the localized trajectory of the robot in a database file
 ```
 $ rtabmap-databaseViewer ~/.ros/rtabmap.db
 ```
+    a. Choose View -> Constraints View and Graph View
+    b. To see 3D Map, Choose Edit -> View 3D Map ...
+    
+You could also open the database I already generated in this project.
