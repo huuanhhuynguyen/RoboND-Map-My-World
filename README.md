@@ -26,6 +26,12 @@ This project is part of Udacity Robotics Software Engineer Nanodegree.
            <br>Occupancy Grid
       </p>
     </th>
+    <th><p>
+           <img src="images/features.png"
+            alt="features" width="200" height="200"></a>
+           <br>Occupancy Grid
+      </p>
+    </th>
   </tr>
 </table>
 
