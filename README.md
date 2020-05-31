@@ -4,7 +4,30 @@ An application of [rtabmap-ros](http://wiki.ros.org/rtabmap_ros) package for
 simultaneous localization and mapping (SLAM) of a mobile robot. 
 This project is part of Udacity Robotics Software Engineer Nanodegree.
 
-![image](/images/2.png)
+<table style="width:100%">
+  <tr>
+    <th><p>
+           <img src="images/3D_map.png"
+            alt="3D map" width="400" height="200"></a>
+           <br>3D Map
+        </p>
+    </th>
+    <th><p>
+           <img src="images/2D_map.png"
+            alt="2D map" width="200" height="200"></a>
+           <br>2D Map
+      </p>
+    </th>
+  </tr>
+  <tr>
+    <th><p>
+           <img src="images/occupancy_grid.png"
+            alt="occupancy grid" width="400" height="200"></a>
+           <br>Occupancy Grid
+      </p>
+    </th>
+  </tr>
+</table>
 
 ## Description
 The project consists of the following parts:
