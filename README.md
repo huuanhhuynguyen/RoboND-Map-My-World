@@ -29,7 +29,7 @@ This project is part of Udacity Robotics Software Engineer Nanodegree.
     <th><p>
            <img src="images/features.png"
             alt="features" width="200" height="200"></a>
-           <br>Detected features
+           <br>Detected Features
       </p>
     </th>
   </tr>
@@ -42,7 +42,7 @@ The project consists of the following parts:
 
 ## Prequisites
 1. ROS (Melodic or Kinetic), Gazebo on Linux
-2. CMake & g++
+2. CMake & g++/gcc
 
 ## Setup, Build and Launch
 1. Install Gazebo and ROS(melodic/kinetic) on Linux.
