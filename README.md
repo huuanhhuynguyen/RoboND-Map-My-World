@@ -59,7 +59,6 @@ $ catkin_init_workspace
 $ git clone https://github.com/huuanhhuynguyen/RoboND-Map-My-World.git
 $ cp -R RoboND-Map-My-World/my_robot .
 $ cp -R RoboND-Map-My-World/rtabmap.db .
-$ cp -R RoboND-Map-My-World/default.rviz .
 $ rm -rf RoboND-Map-My-World
 ```
 
