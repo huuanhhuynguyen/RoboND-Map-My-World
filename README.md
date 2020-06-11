@@ -43,66 +43,54 @@ The project consists of the following parts:
 ## Prequisites
 1. ROS (Melodic or Kinetic), Gazebo on Linux
 2. CMake & g++/gcc
+3. Install `rtabmap-ros` package `$ sudo apt-get install ros-${ROS_DISTRO}-rtabmap-ros`
 
 ## Setup, Build and Launch
-1. Install Gazebo and ROS(melodic/kinetic) on Linux.
 
-2. Initialize a catkin workspace
+1. Clone project and initialize a catkin workspace
 ```
-$ mkdir -p catkin_ws/src
-$ cd catkin_ws/src
-$ catkin_init_workspace
-```
-
-3. Within `catkin_ws/src`, clone the project
-```
+$ mkdir catkin_ws && cd catkin_ws
 $ git clone https://github.com/huuanhhuynguyen/RoboND-Map-My-World.git
-$ cp -R RoboND-Map-My-World/my_robot .
-$ cp -R RoboND-Map-My-World/rtabmap.db .
-$ rm -rf RoboND-Map-My-World
+$ mv RoboND-Map-My-World src
+$ cd src && catkin_init_workspace
 ```
 
-4. Also within `catkin_ws/src`, clone the `teleop` project
+2. Within the `catkin_ws/src` folder, clone the `teleop` project
 ```
 $ git clone https://github.com/ros-teleop/teleop_twist_keyboard
 ```
 
-5. Install ROS packages required for this project
-```
-$ sudo apt-get install ros-${ROS_DISTRO}-rtabmap-ros
-```
-
-6. Move back to `catkin_ws\` and build
+3. Move back to `catkin_ws\` and build
 ```
 $ cd ..
 $ catkin_make
 ```
 
-7. Launch the world and robot
+4. Launch the world and robot
 ```
 $ source devel/setup.bash
 $ roslaunch my_robot world.launch
 ```
 
-8. Open another terminal (Ctrl+Shift+T), and launch the `mapping.launch` file. 
+5. Open another terminal (Ctrl+Shift+T), and launch the `mapping.launch` file. 
 Here, the rtabmap-ros package will be launched.
 ```
 $ source devel/setup.bash
 $ roslaunch my_robot mapping.launch
 ```
 
-9. Open another terminal, and run the `teleop` node.
+6. Open another terminal, and run the `teleop` node.
 ```
 $ source devel/setup.bash
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ```
 
-10. Click on this terminal, type keyboard to navigate the robot around. Navigate 
+7. Click on this terminal, type keyboard to navigate the robot around. Navigate 
 the robot to scan its surrounding environment. The rtabmap-ros package will save
 the resulted map with the localized trajectory of the robot in a database file 
 `~/.ros/rtabmap.db`.
 
-11. Open another terminal, and open up the database file using `rtabmap-databaseViewer`
+8. Open another terminal, and open up the database file using `rtabmap-databaseViewer`
 ```
 $ rtabmap-databaseViewer ~/.ros/rtabmap.db
 ```
