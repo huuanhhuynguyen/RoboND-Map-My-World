@@ -40,12 +40,12 @@ The project consists of the following parts:
 1. A Gazebo world and a mobile robot from this [project](https://github.com/huuanhhuynguyen/RoboND-Go-Chase-It).
 2. ROS package: [rtabmap-ros](http://wiki.ros.org/rtabmap_ros)
 
-## Prequisites
+## Prerequisites
 1. ROS (Melodic or Kinetic), Gazebo on Linux
 2. CMake & g++/gcc
 3. Install `rtabmap-ros` package `$ sudo apt-get install ros-${ROS_DISTRO}-rtabmap-ros`
 
-## Setup, Build and Launch
+## Build and Launch
 
 1. Clone project and initialize a catkin workspace
 ```
